@@ -1,0 +1,55 @@
+wire [31:0] Datamem_addr_sel_swreg;
+assign	Datamem_addr_sel_sw= Datamem_addr_sel_swreg[0];
+
+wire [31:0] Datamem_addr_swreg;
+assign	Datamem_addr_sw[7:0] = Datamem_addr_swreg[7:0] ;
+
+wire [31:0] Datamem_data_sel_swreg;
+assign	Datamem_data_sel_sw= Datamem_data_sel_swreg[0];
+
+wire [31:0] Datamem_data_sw_high_reg;
+wire [31:0] Datamem_data_sw_low_reg;
+assign	Datamem_data_sw={Datamem_data_sw_high_reg,Datamem_data_sw_low_reg};
+
+wire [31:0] Datamem_wen_sel_swreg;
+assign	Datamem_wen_sel_sw= Datamem_wen_sel_swreg[0];
+
+wire [31:0] Datamem_wen_swreg;
+assign	Datamem_wen_sw= Datamem_wen_swreg[0];
+
+wire [31:0] end_MEM_sel_swreg;
+assign	end_MEM_sel_sw= end_MEM_sel_swreg[0];
+
+wire [31:0] end_MEM_swreg;
+assign	end_MEM_sw= end_MEM_swreg[0];
+
+wire [31:0] instr_mem_addr_swreg;
+assign	instr_mem_addr_sw[8:0] = instr_mem_addr_swreg[8:0] ;
+
+wire [31:0] instr_mem_data_handle_swreg;
+assign	instr_mem_data_handle_sw[31:0] = instr_mem_data_handle_swreg[31:0] ;
+
+wire [31:0] instr_mem_sel_swreg;
+assign	instr_mem_sel_sw= instr_mem_sel_swreg[0];
+
+wire [31:0] instr_mem_wren_swreg;
+assign	instr_mem_wren_sw= instr_mem_wren_swreg[0];
+
+wire [31:0] pipe_start_sel_swreg;
+assign	pipe_start_sel_sw= pipe_start_sel_swreg[0];
+
+wire [31:0] pipe_start_swreg;
+assign	pipe_start_sw= pipe_start_swreg[0];
+
+wire [31:0] reset_swreg;
+assign	reset_sw= reset_swreg[0];
+
+
+
+
+
+.software_regs({Datamem_addr_sel_swreg,Datamem_addr_swreg,Datamem_data_sel_swreg,Datamem_data_sw_high_reg,Datamem_data_sw_low_reg,Datamem_wen_sel_swreg,Datamem_wen_swreg,end_MEM_sel_swreg,end_MEM_swreg,instr_mem_addr_swreg,instr_mem_data_handle_swreg,instr_mem_sel_swreg,instr_mem_wren_swreg,pipe_start_sel_swreg,pipe_start_swreg,reset_swreg})
+
+
+Number of software registers is:16
+

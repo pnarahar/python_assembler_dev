@@ -1,0 +1,17 @@
+wire [31:0] dataMemOut_hw_high_reg;
+wire [31:0] dataMemOut_hw_low_reg;
+assign	dataMemOut_hw_high_reg= dataMemOut_hw [63:32];
+assign	dataMemOut_hw_low_reg= dataMemOut_hw [31:0];
+
+wire [31:0] pc_en_FIFO_hwreg;
+assign	pc_en_FIFO_hwreg[0]= pc_en_FIFO_hw;
+
+
+
+
+
+.hardware_regs({dataMemOut_hw_high_reg,dataMemOut_hw_low_reg,pc_en_FIFO_hwreg})
+
+
+Number of hardware registers is:3
+

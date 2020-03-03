@@ -1,0 +1,89 @@
+	sw	$0,40($0)
+	nop
+	lw	$2,40($0)
+	nop
+	addu $5,$0,4
+	slt	$2,$2,$5
+	bne	$2,$0,2
+	j	82
+	nop
+	sw	$0,44($0)
+	nop
+	addu	$3,$0,4
+    lw	$2,40($0)
+	nop
+	subu $3,$3,$2
+	lw	$2,44($0)
+	nop
+	slt	$2,$2,$3
+	bne	$2,$0,2
+	j	76
+	nop
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$4,$3,$2
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$2,$3,$2
+	addu	$2,$2,1
+	lw	$3,0($4)
+	nop
+	lw	$2,0($2)
+	nop
+	slt	$2,$2,$3
+	beq	$2,$0,32
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$2,$3,$2
+	lw	$2,0($2)
+	nop
+	sw	$2,48($0)
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$4,$3,$2
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$2,$3,$2
+	addu	$2,$2,1
+	lw	$2,0($2)
+	nop
+	sw	$2,0($4)
+	lw	$2,44($0)
+	nop
+	addu $3,$2,0
+	addu	$2,$0,7
+	addu	$2,$3,$2
+	addu	$3,$2,1
+	lw	$2,48($0)
+	nop
+	sw	$2,0($3)
+	nop
+	lw	$2,44($0)
+	nop
+	addu	$2,$2,1
+	sw	$2,44($0)
+	j	11
+	nop
+	lw	$2,40($0)
+	nop
+	addu	$2,$2,1
+	sw	$2,40($0)
+	j	2
+	nop
+
+
+	
+	
+	
+	
+	

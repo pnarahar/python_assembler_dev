@@ -1,0 +1,12 @@
+LW r15,r12(1)
+SW r1,r2(10)
+ADD r1,r2,r3
+SHL r9,r8(8)
+MOV r10,r11
+NOP
+
+
+
+
+
+
